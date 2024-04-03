@@ -19,11 +19,11 @@ app.get('/track/:emailId', async (req, res) => {
         console.log('User Location:', location);
 
         // Return a transparent pixel image
-        res.sendFile('pixel.png', { root: __dirname });
+        res.sendFile('pixel.jpeg', { root: __dirname });
     } catch (error) {
         console.error('Error fetching location:', error.message);
         // Return a transparent pixel image even if location fetching fails
-        res.sendFile('pixel.png', { root: __dirname });
+        res.sendFile('pixel.jpeg', { root: __dirname });
     }
 });
 
